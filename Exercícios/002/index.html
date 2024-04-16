@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parágrafos</title>
+</head>
+<body>
+    <h1>Parágrafos e Quebras de Linha</h1>                                  <!-- A tag <h1></h1> é um título de grau 1 -->
+    <hr>                                                                    <!-- A tag <hr> é uma linha horizontal -->
+    <p>                                                                     
+        Você pode escrever um parágrafo de qualquer jeito.
+        Basta colocar tudo dentro das tags &lt;p&gt; e &lt;/p&gt;. 👍
+        <!-- 
+            As referências &lt; e &gt; permitem colocar o símbolo de tag dentro de um texto
+            Ex.:
+            &lt; = <
+            &gt; = >
+        -->
+    </p>
+    <p>
+        Se você quiser quebrar a linha em um parágrafo, basta usar a
+        tag &lt;br&gt;. <br>                                                <!-- A tag <br> é uma quebra de linha -->
+        Ex.:<br>
+        Hello world<br>
+    </p>
+    <p>
+        Vamos adicionar alguns símbolos especiais:<br>                      <!-- Símbolos são considerados entidades HTML -->
+        &reg;           <!-- Símbolo de marca registrada (®) -->
+        &copy;          <!-- Símbolo de direitos autorais (©) -->
+        &trade;         <!-- Símbolo de marca comercial (™) -->
+        &euro;          <!-- Símbolo do Euro (€) -->
+        &delta;         <!-- Letra grega delta minúscolo (δ) -->
+        &Delta;         <!-- Letra grega delta maiúscula (Δ) -->
+        ...
+    </p>
+    <p>
+        <!-- 
+            Para garantir que o emoji seja lido pelo navegador, basta colocar &#x seguido do codepoints
+            do emoji sem o U+ e com um ; no final
+        -->
+        Vamos adicionar alguns emojis:<br>
+        &#x1F919;       <!-- 🤙 -->
+        &#x1F609;       <!-- 😉 -->
+        &#x1F60F;       <!-- 😏 -->
+        ...
+        <br>
+        <a href="https://emojipedia.org/">Link do site com código dos emojis.</a>
+
+
+    </p>
+</body>
+</html>

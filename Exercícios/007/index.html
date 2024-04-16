@@ -1,0 +1,91 @@
+<!-- 
+    Tudo que está relacionado com semântica é HTML e tudo que está rela-
+    cionado com forma é CSS
+ -->
+
+ <!-- Definição do documento HTML -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Cabeçalho do docomento HTML -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <!-- A tag style contém todo o CSS da página web -->
+    <style>
+        mark {
+            background-color: rgba(43, 153, 255, 0.651);    /* Seletor CSS pra tag mark*/
+        }
+    </style>
+</head>
+<!-- Corpo do documento HTML -->
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito/ Destaque</h2>
+    <!--
+         A tag <b></b> não deve ser usada para o negrito, pois ela só 
+         se importa com a forma (área do CSS). Portanto, deve-se usar 
+         a tag <strong></strong> para o negrito
+    -->
+    <p>Nesta frase, temos um <b>termo em negrito</b> usando a tag b 
+    (não semântica)</p>
+
+    <p>Nesta frase , temos um <strong>termo em destaque</strong> 
+    usando a tag strong (semântica)</p>
+    <!-- =============================================================== -->
+
+    <h2>Itálico/ Ênfase</h2>
+    <!-- 
+        De forma análoga, para a o itálico há duas tags, uma não se-
+        ântia (tag <i></i>) e uma semântica (tag <em></em>). Então, 
+        deve-se usar a tag <em></em> para itálico
+    -->
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a 
+    tag i (não semântica)</p>
+
+    <p>Nesta frase, temos um <em>termo em itálico</em> usando a tag em 
+    (semântica)</p>
+    <!-- =============================================================== -->
+
+    <h2>Texto Marcado</h2>
+    <!-- 
+        Também é possivel fazer um efeito de marcador de texto no HTML 
+        usando a tag mark. Porém, isso se enquadra mais como coisa de 
+        estilo/ forma, então é recomendável fazer isso no CSS. Fora isso,
+        para mudar a cor do "marca texto" é necessário usar o parâmetro 
+        style da tag (usar CSS)
+    -->
+    <p>Podemos criar também um <mark style="background-color: lime;">
+    texto marcado</mark> usando a tag mark</p>
+    <!-- Cada modificação no parâmetro style de uma tag é individual -->
+    <p>Outro <mark style="background-color: yellow;">texto marcado</mark> 
+    usando a tag mark</p>
+    <!--
+        Para mudar a cor de todos as tag mark, é necessário criar uma tag 
+        style com o seletor pra tag mark
+    -->
+    <p>Outro <mark>texto marcado</mark> 
+    usando a tag mark</p>
+
+    <p>Outro <mark>texto marcado</mark> 
+    usando a tag mark</p>
+    <!-- =============================================================== -->
+    
+    <h2>Texto Deletado</h2>
+    <!-- A tag <del></del> permite riscar um texto -->
+    <p>Podemos marcar <del>um texto como excluído (riscado)</del> com a tag 
+    del para indicar que ele deve ser lido, mas não considerado</p>
+    
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido (sublinhado)</ins> com a tag 
+    para dar uma ênfase e indicar que ele foi adicionado depois</p>
+    <!-- =============================================================== -->
+
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir potências da matemática. Ex.: x<sup>20+3</sup></p>
+
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir subíndices. Ex.: H<sub>2</sub>O</p>
+    <!-- =============================================================== -->
+</body>
+</html>

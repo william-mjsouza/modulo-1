@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes e observe o 
+    comportamento dele em relação as imagens.</p>
+    <!-- 
+        A tag <picture></picture> indica que será usado várias opções de caminho 
+        para a mesma imagem (imagem dinâmica)
+     -->
+     <picture>
+        <!-- 
+            O caminho da imagem escolhido depende da largura da tela do navegador 
+            do usuário
+            Ex.:
+            Se max-width <= 750        -> Exibe imagem pequena
+            se 750 < max_width <= 1050 -> Exibe imagem média
+            Caso contrário             -> Exibe imagem grande
+         -->
+        <source media="(max-width: 750px)" srcset="imagens/imagem_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_m.png" type="image/png">
+        <img src="imagens/imagem_g.png" alt="Imagem Flexível">
+     </picture>
+     <!-- 
+        A tag <audio></audio> permite colocar um aúdio na página do site.
+        O parâmetro controls cria o reprodutor de aúdio para o usuário 
+        poder ouvir o aúdio e o parâmetro loops deixa o aúdio em um loop 
+        infinito, tocando de novo toda vez que ele acaba
+      -->
+      <h1>Reproduzindo Aúdio</h1>
+      <p>Vamos aprender a reproduzir aúdio em HTML5.</p>
+      <audio src="audios/Numb.mp3" controls loop></audio>
+</body>
+</html>

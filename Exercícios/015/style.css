@@ -1,0 +1,21 @@
+/* Regra para o CSS entender acentuação e caracteres especiais */
+@charset "UTF-8";
+
+/* Seletor CSS pra tag <body></body> */
+body {
+    background-color: lightblue;                    /* background-color -> Altera a cor de fundo */
+    font-family: Arial, Helvetica, sans-serif;        /* font-family -> Altera o tipo de fonte dos textos */
+    font-size: 20px;                                  /* font-size -> Altera o tamanho da fonte dos textos */
+}
+/* Seletor CSS pra tag <h1></h1> */
+h1 {
+    color: darkblue;                                /* color -> Altera a cor da fonte do texto */
+}
+/* Seletor CSS pra tag <h2></h2> */
+h2 {
+    color: darkred;
+}
+/* Seletor CSS pra tag <p></p> */
+p {
+    text-align: justify;                              /* text-align -> Altera o tipo de alinhamento do texto */
+}

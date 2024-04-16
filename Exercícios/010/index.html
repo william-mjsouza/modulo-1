@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <!-- 
+        Links externos permitem fazer o redirecionamentos dos usuários que 
+        clicaram em um link no seu site, levando-os para outro site.
+
+        O endereço do site destino estará dentro do texto que foi marcado 
+        com a tag <a></a>
+    -->
+    <h2>Usando Links Externos</h2>
+    <!-- 
+        Esse novo site que foi aberto pelo link pode ser carregado na mesma 
+        aba que o seu site estava aberto no navegador do usuário. dessa forma, 
+        haverá uma sobreposição de sites.
+        Ex.:
+     -->
+    <p>Você pode acessar o meu site <a href="https://williamportfolio.netlify.app/">aqui</a> (carregar na mesma aba)</p>
+     <!-- 
+        Para fazer com que o site do link seja aberto em uma nova aba do 
+        navegador do usuário, basta usar os parâmetros: target="_blank" e 
+        rel="external"
+
+        OBS: Caso o link externo seja de uma página patrocinada, o parâmetro
+        rel deverá ser setado para "nofollow". isso evitará que os robôs do 
+        Google acessem o link
+     -->
+    <p>você pode acessar o meu site <a href="https://williamportfolio.netlify.app/" target="_blank" rel="external">aqui</a> (carregar em outra aba)</p>
+    <!-- Links internos permitem navegar pelas páginas de um mesmo site -->
+    <h2>Usando Links Internos</h2>
+    <!-- O parâmetro target="self" indica que a nevagação é no mesmo site -->
+    <!-- O parâmetro rel="next" indica que a nevagação está indo para a próxima página do site -->
+    <p>Está é a primeira página do meu site, se quiser ir pra segunda, clique <a href="pag02.html" target="_self" rel="next">aqui</a>!</p>
+    <!-- 
+        Também é possível usar links para fazer downloads de arquivos no site.
+        O arquivo a ser baixado pelo usuário deve estar na mesma pasta que os 
+        arquivos do código da página
+        Ex.:
+     -->
+     <h2>Usando Links pra Downloads</h2>
+     <ul>
+        <!-- href="caminho_do_arquivo" -->
+        <!-- download="nome_arquivo._extensao_arquivo" -->
+        <!-- typle="application/extensao_arquivo" -->
+        <li><a href="arquivos/Lista de Exercícios 01.pdf" download="Exercícios 01.pdf" type="application/pdf">Baixar o PDF</a></li>
+        <li><a href="arquivos/William M. J. de Souza.zip" download="William M. J. de Souza.zip" type="application/zip">Baixar o Arquivo Zip</a></li>
+     </ul>
+</body>
+</html>

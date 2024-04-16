@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- 
+        A tag <video></video> permite colocar um vídeo na página. 
+        O parâmetro poster define a capa do vídeo, o parâmetro 
+        controls exibe o player de vídeo na página para o usuário 
+        poder reproduzir o vídeo e o parâmetro loop faz o vídeo 
+        ser reiniciado toda vez que ele termina.
+        
+        OBS: é recomendável ter o vídeo em diferentes formatos, 
+        pois nem todos os navegadores são capazes de reproduzir 
+        todos os formatos de vídeos que existem. 
+
+        Para ter varíos formatos, basta usar a tag <sourse>.
+        Ex.:
+     -->
+    <video width="560px" poster="midia/capa_video.jpg" controls loop>
+        <source src="midia/Praia.mp4" type="video/mp4">         <!-- Primeiro o navegador tenta  carregar esse -->
+        <source src="midia/Praia.mkv" type="video/mkv">         <!-- Caso não consiga, ele tenta esse -->
+        <source src="midia/Praia.webm" type="video/webm">       <!-- Caso não consiga de novo, ele tenta esse -->
+        <p>O seu navegador não tem compatibilidade com          <!-- Se não conseguir carregar nenhum, é exibida esta mensagem -->
+        reprodução de vídeos.</p>
+    </video>
+    <!-- 
+        O problema de usar vídeos hospedados no próprio servidor, 
+        é que dependendo da quantidade de pessoas que acessam o 
+        seu site, o consumo de internet pode ficar muito alto. 
+        Para evitar isso, podemos hospedar nossos vídeos em 
+        servidores de vídeos como o Youtube e o Vimeo e apenas fazer
+        uma referência ao vídeo na página do nosso site.
+        Ex.:
+     -->
+     <!-- A vantagem do Youtube é que ele é de graça -->
+     <!-- A desvantagem é que ele tem anúncios e todos 
+    podem ver o vídeo (ruim para conteúdo de assinantes) -->
+    <h1>Inserindo vídeos do Youtube</h1>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/5DpiYtBww9E?si=tY8o54dr_BRKCL0e" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; 
+    autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+    web-share" allowfullscreen></iframe>
+    <!-- A vantagem do Vimeo é que só pessoas permitidas 
+    podem ver o vídeo (bom para conteúdo de assinantes) -->
+    <!-- A desvantagem é que ele é pago e é caro -->
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/660408476?h=336b0062ab" 
+    width="560" height="315" frameborder="0" allow="autoplay; fullscreen; 
+    picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
